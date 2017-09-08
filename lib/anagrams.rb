@@ -8,12 +8,12 @@ class Anagrams
     sentence2 = sentence2.gsub(/[^0-9a-z]/i, '')
     sentence1 = sentence1.downcase.split("").sort()
     sentence2 = sentence2.downcase.split("").sort()
-    if (sentence1 =~ /[0-9]/) || (sentence2 =~ /[0-9]/)
-      "Please enter a sentence"
-    elsif sentence1 == sentence2
-      "These two words are anagrams"
+    # if (sentence1 =~ /[0-9]/) || (sentence2 =~ /[0-9]/)
+    #   "Please enter a sentence"
+    if sentence1 == sentence2
+      "These two sentences are anagrams"
     else
-      "These two words are not anagrams"
+      "These two sentences are not anagrams"
     end
 
   end
