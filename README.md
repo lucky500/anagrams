@@ -1,6 +1,9 @@
 #Anagrams
 
 #Specifications
+* Program will return an error if first word and second word are not anagrams.
+  * Example Input : "Hello", "Ola"
+  * Example Output: "These two sentences are not anagrams."
 
 * Program will return error message if number is entered
   * Example Input: 0
@@ -20,6 +23,6 @@
 * If input is not an actual anagram, program will check if the input is an antigram.
   * Example Input: "Hi" "Bye"
   * Example Output: "These two words have no letters matching and is an actual antigram"
-* Account for multiple words being angram or antigram
+* Account for multiple words being anagram or antigram
   * Example Input: "A Decimal Point" "Im a Dot in Place"
-  * Example Output: "These words are anagrams"
+  * Example Output: "These words are"
