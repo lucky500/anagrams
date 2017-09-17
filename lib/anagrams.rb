@@ -14,19 +14,14 @@ class Anagrams
     @sentence1 == @sentence1.reverse
   end
 
-  # def is_anagrams?
-  #   clean_anagram = self.gsub!(/[^A-Za-z]/, '')
-  # end
-  # def is_palindrome?(word)
-  #   palindrome_words = []
-  #   word = word.downcase()
-  #   word = word.split(" ")
-  #   word.each do |i|
-  #     if i == i.reverse
-  #       'are palindrome words'
-  #       palindrome_words.push(i)
-  #   end
-  # end
+  def is_it_a_word?(sentence1, sentence2 = '')
+    if @sentence1.match(/[aeiou]/i) || @sentence2.match(/[aeiou]/i)
+      true
+    else
+      "Please enter a word"
+    end
+  end
+
 
   def get_anagrams(sentence1, sentence2)
     @sentence1 = sentence1.gsub(/[^0-9a-z]/i, '').downcase.split("").sort()

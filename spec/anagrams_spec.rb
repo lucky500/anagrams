@@ -37,3 +37,18 @@ describe("Anagrams#is_palindrome?") do
     expect(palindrome.is_palindrome?("Never a foot too far, even.")).to(eq(true))
   end
 end
+
+describe("Anagrams#is_it_a_word?") do
+  word = Anagrams.new("sentence")
+  it("Program will return true if word or sentence entered contain vowels.") do
+    expect(word.is_it_a_word?("The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.")).to(eq(true))
+  end
+end
+
+describe("Anagrams#is_it_a_word?") do
+  word = Anagrams.new("tfrv")
+  it("Program will return an error if word or sentence entered does not contain vowels.") do
+    expect(word.is_it_a_word?("tfrv")).to(eq("Please enter a word"))
+  end
+end
+
