@@ -1,15 +1,17 @@
 require('pry')
 
 class Anagrams
-  def initialize(sentence1, sentence2)
+
+  attr_accessor :sentence1, :sentence2
+
+  def initialize(sentence1, sentence2 = '')
     @sentence1 = sentence1
     @sentence2 = sentence2
   end
 
-  def is_palindrome?(sentence1, sentence2)
+  def is_palindrome?(sentence1)
     @sentence1 = sentence1.downcase.scan(/\w/)
-    @sentence2 = sentence2.downcase.scan(/\w/)
-    @sentence1 == @sentence2
+    @sentence1 == @sentence1.reverse
   end
 
   # def is_anagrams?

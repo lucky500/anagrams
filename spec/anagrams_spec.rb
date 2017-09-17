@@ -32,8 +32,8 @@ describe("Anagrams#get_anagrams") do
 end
 
 describe("Anagrams#is_palindrome?") do
-  anagrams = Anagrams.new("Anina", "Anina")
+  palindrome = Anagrams.new("Never a foot too far, even.")
   it("Program will check to see if words in sentence one are palindromes") do
-    expect(anagrams.is_palindrome?("Anina", "Anina")).to(eq(true))
+    expect(palindrome.is_palindrome?("Never a foot too far, even.")).to(eq(true))
   end
 end
